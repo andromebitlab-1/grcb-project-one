@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRCB-WEB | Generic Random Cursed Bot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🧠</span>
+                    <h1>GRCB-WEB</h1>
+                </div>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Cursed Bot Online</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div id="chat-messages" class="messages-list">
+                <!-- Messages will appear here -->
+                <div class="message bot">
+                    <div class="bubble">
+                        Hola. Soy el Generic Random Cursed Bot. 
+                        Escribe algo y buscaré en los rincones más oscuros de Reddit y 4chan para darte una respuesta... peculiar.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="input-area">
+            <div class="input-wrapper">
+                <textarea id="user-input" placeholder="Pregunta algo maldito... (Ctrl+Enter para enviar)" rows="1"></textarea>
+                <div class="controls">
+                    <button id="toggle-imagination" class="toggle-btn active" title="Modo Imaginación (Ctrl+P)">
+                        <span class="icon">🧠</span>
+                    </button>
+                    <button id="send-btn" class="send-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="shortcuts">
+                <span><b>Ctrl+Enter</b> Enviar</span>
+                <span><b>Ctrl+P</b> Modo Imaginación</span>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
